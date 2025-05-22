@@ -63,20 +63,20 @@ ecoride-app/
 git clone https://github.com/BlocSpore/ecoride-app.git
 cd ecoride-app
 
-**2. Backend
+**2. Backend**
 
 cd backend
 npm install
 cp .env.example .env     # Adapter variables si besoin
 npm start                # http://localhost:5001
 
-**3. Frontend
+**3. Frontend**
 
 cd ../frontend
 npm install
 npm run dev              # http://localhost:3000
 
-**4. Base de données
+**4. Base de données**
 
 MySQL : créer la base, adapter .env
 MongoDB : cluster Atlas/local, ajuster MONGO_URI dans .env
