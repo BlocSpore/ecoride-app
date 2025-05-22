@@ -4,6 +4,17 @@ _EcoRide est une application web de covoiturage écologique réalisée dans le c
 
 ---
 
+## 🚀 Liens principaux
+
+- 🌐 **Frontend (Vercel)** : [https://ecoride-app-git-main-blocspores-projects.vercel.app](https://ecoride-app-git-main-blocspores-projects.vercel.app)
+- 🖥️ **Backend (Render)** : [à compléter](#)
+- 📑 **Documentation API (HackMD)** : [https://hackmd.io/@cPrmPOz0S1CIcqPbIQbn8g/S1ZpmMpWlg](https://hackmd.io/@cPrmPOz0S1CIcqPbIQbn8g/S1ZpmMpWlg)
+- 📦 **GitHub** : [https://github.com/BlocSpore/ecoride-app](https://github.com/BlocSpore/ecoride-app)
+- 🗂️ **Trello (Kanban projet)** : [https://trello.com/b/DZMAsaN4/ecoride-tp-dwwm-mai-2025](https://trello.com/b/DZMAsaN4/ecoride-tp-dwwm-mai-2025)
+- 🎨 **Maquettes** : _à compléter (PDF/Figma)_
+
+---
+
 ## 🚗 Objectifs
 
 - Faciliter les trajets en covoiturage (mise en relation conducteurs/passagers)
@@ -31,70 +42,51 @@ _EcoRide est une application web de covoiturage écologique réalisée dans le c
 - Ajout/modification/suppression de voitures
 - Système d’avis (dépôt, validation par employé, affichage)
 - Tableau de bord admin (statistiques, création employés, suspension)
-- Documentation API (Swagger/Markdown)
+- Documentation API (voir ci-dessus)
 - Logs d’activité (MongoDB)
 
 ---
 
 ## 📁 Organisation du projet
 
+```plaintext
 ecoride-app/
-├── backend/ # Node.js, Express, modèles, routes, controllers
-├── frontend/ # React, composants/pages
-├── docs/ # Documentation, API, guides
-├── maquette/ # Maquettes Figma/PDF
+├── backend/    # Node.js, Express, modèles, routes, controllers
+├── frontend/   # React, composants/pages
+├── docs/       # Documentation, API, guides
+├── maquette/   # Maquettes Figma/PDF
 └── README.md
+💻 Installation locale
 
----
-
-## 🚀 Démo
-
-- **Backend (Render)** : _à compléter_
-- **Frontend (Vercel)** : _à compléter_
-- **API docs** : _à compléter_
-
----
-
-## 💻 Installation locale
-
-**1. Cloner le projet**
-
-   bash
+1. Cloner le projet
 git clone https://github.com/BlocSpore/ecoride-app.git
 cd ecoride-app
-
-**2. Backend**
-
+2. Backend
 cd backend
 npm install
 cp .env.example .env     # Adapter variables si besoin
 npm start                # http://localhost:5001
-
-**3. Frontend**
-
+3. Frontend
 cd ../frontend
 npm install
 npm run dev              # http://localhost:3000
-
-**4. Base de données**
-
+4. Base de données
 MySQL : créer la base, adapter .env
 MongoDB : cluster Atlas/local, ajuster MONGO_URI dans .env
-
-🔗 Liens utiles
-
-GitHub
-Trello 
-Maquettes : à compléter (PDF/Figma)
-🔒 Accès admin (test)
+🔒 Accès administrateur (test)
 
 Login : admin
 Mot de passe : aze
 (Tester via /api/auth/login ou interface admin)
 📑 Documentation API
 
-Voir /docs ou Swagger (lien à compléter)
+Documentation complète (HackMD, accès public)
+Voir aussi le dossier /docs ou Swagger (lien à compléter)
 Export PDF disponible en annexe du TP
 🤝 Remerciements
 
-Projet réalisé dans le cadre du TP DWWM – Merci à Studi.
+Projet réalisé dans le cadre du TP DWWM – Merci à Studi, au formateur, et aux beta-testeurs.
+
+📄 Licence
+
+MIT
