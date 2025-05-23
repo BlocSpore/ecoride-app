@@ -3,16 +3,17 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 const db = require('./models');
-const mongoose = require('mongoose');
+// const mongoose = require('mongoose');  // << désactivé
 const PORT = process.env.PORT || 5001;
 
-// Connexion MongoDB
-mongoose.connect(process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/ecoride_logs', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-})
-  .then(() => console.log('✅ Connexion MongoDB réussie'))
-  .catch(err => console.error('❌ Erreur connexion MongoDB :', err));
+// Connexion MongoDB — DÉSACTIVÉE POUR LE DÉPLOIEMENT
+// if (process.env.MONGO_URI) {
+//   mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+//     .then(() => console.log('✅ Connexion MongoDB réussie'))
+//     .catch(err => console.error('❌ Erreur connexion MongoDB :', err));
+// } else {
+//   console.log("🔔 Aucune URI MongoDB fournie (logs désactivés)");
+// }
 
 // Middleware global pour parser le JSON
 app.use(express.json());
@@ -26,7 +27,6 @@ const avisRoutes = require('./routes/avis');
 const roleRoutes = require('./routes/role');
 const authRoutes = require('./routes/auth');
 const logRoutes = require('./routes/log');
-
 
 // Organisation claire des endpoints API
 app.use('/api/utilisateurs', utilisateurRoutes);
@@ -49,10 +49,8 @@ db.sequelize.authenticate()
 
 // En dev, sync auto (en prod, migrer !)
 db.sequelize.sync({ alter: true })
-
   .then(() => console.log('✅ Modèles MySQL synchronisés'))
   .catch(err => console.error('❌ Erreur de synchronisation des modèles MySQL :', err));
-
 
 // Lancement du serveur
 app.listen(PORT, () => {
