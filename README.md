@@ -11,8 +11,11 @@ _EcoRide est une application web de covoiturage écologique réalisée dans le c
 - 📑 **Documentation API (HackMD)** : [https://hackmd.io/@cPrmPOz0S1CIcqPbIQbn8g/S1ZpmMpWlg](https://hackmd.io/@cPrmPOz0S1CIcqPbIQbn8g/S1ZpmMpWlg)
 - 📦 **GitHub** : [https://github.com/BlocSpore/ecoride-app](https://github.com/BlocSpore/ecoride-app)
 - 🗂️ **Trello (Kanban projet)** : [https://trello.com/b/DZMAsaN4/ecoride-tp-dwwm-mai-2025](https://trello.com/b/DZMAsaN4/ecoride-tp-dwwm-mai-2025)
-- 🎨 **Maquettes** : _à compléter (PDF/Figma)_
+- 🎨 **Maquettes
 
+- [Maquette Figma interactive (prototype, accès public)](https://www.figma.com/proto/IHIe4ZZjHtBE9gLgOySUur/EcoRide-maquette--Copy-?node-id=1087-41&t=z0sx1FI3SfOjA5fE-1)
+- [Maquette PDF (GitHub)](./maquette/ecoride-maquette.pdf)
+- 
 ---
 
 ## 🚗 Objectifs
